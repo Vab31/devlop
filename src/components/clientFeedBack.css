@@ -1,0 +1,61 @@
+/* .container .feedBack__container {
+  width: 50px;
+} */
+
+.feedBackContainer {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.feedBack__container {
+  width: 50vw;
+  height: 50vh;
+}
+/* .container {
+  width: 50%;
+} */
+
+.client__avatar {
+  width: 6rem;
+  margin: 0 auto 1rem;
+}
+
+.feed {
+  background: #2c2c6c;
+
+  text-align: center;
+  padding: 4rem 0;
+  border-radius: 3rem;
+  user-select: none;
+}
+
+.client__review,
+.client__name {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  display: block;
+  width: 80%;
+  margin: 0.8rem auto 0;
+}
+.client__name {
+  font-size: larger;
+  font-weight: 600;
+}
+
+/* =============== MEDIA QUARIES (MEDIUM DEVICES) =================*/
+@media screen and (max-width: 1024px) {
+  .feedBack__container {
+    width: 80%;
+  }
+}
+
+/* =============== MEDIA QUARIES (SMALL DEVICES) =================*/
+@media screen and (max-width: 600px) {
+  .feedBack__container {
+    width: 90%;
+  }
+
+  .client__review {
+    width: 90%;
+  }
+}

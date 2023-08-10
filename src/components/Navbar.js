@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import lean from "../img/lean.png";
 import Service from "./Service";
 import Project from "./Project";
+import ClientFeedBack from "./ClientFeedBack";
+import BookUs from "./BookUs";
+import Footer from "./Footer";
 
 const Navbar = () => {
   return (
@@ -13,7 +16,7 @@ const Navbar = () => {
         <div className="navbar-left">
           <ul className="nav-list">
             <li className="nav-item">
-              {/* <span>
+              <span>
                 <img
                   style={{ marginBottom: "-5px" }}
                   src={lean}
@@ -21,7 +24,7 @@ const Navbar = () => {
                   width="25px"
                 />{" "}
                 &nbsp;
-              </span> */}
+              </span>
               <Link to="/home">Media</Link>
             </li>
           </ul>
@@ -57,6 +60,9 @@ const Navbar = () => {
       <Body />
       <Service />
       <Project />
+      <ClientFeedBack />
+      <BookUs />
+      <Footer />
     </>
   );
 };

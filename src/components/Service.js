@@ -10,8 +10,8 @@ const Service = () => {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    minHeight: "100vh", // This will ensure the content is centered vertically on the page
-    padding: "20px", // Adding some padding for spacing
+    minHeight: "100vh",
+    padding: "20px",
   };
 
   const hrStyle = {
@@ -21,8 +21,8 @@ const Service = () => {
 
   return (
     <div style={serviceContainerStyle}>
-      <div>
-        <h1>Our Service</h1>
+      <div data-aos="fade-up">
+        <h1>Our Services</h1>
       </div>
       <div style={hrStyle}>
         <hr />

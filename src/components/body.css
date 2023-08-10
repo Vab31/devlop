@@ -28,14 +28,15 @@ body {
 }
 
 .reviewBody {
-  margin-left: 5px;
+  text-align: center;
+  align-items: center;
   font-size: x-large;
-  width: 500px;
-  height: 300px;
-  padding-left: 60px;
-  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  margin-right: 5%;
   background-color: #ffffff;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
 }
 
 .camel img {
@@ -88,11 +89,103 @@ body {
   color: black;
 }
 
-.sty {
-  /* overflow: hidden; */
-  /* background-color: black; */
-  /* color: #f2f2f2; */
-  /* border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px; */
+/* /////////// */
+/* .about__container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+} */
+
+/* .about__me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, transparent, #4db5ff, transparent);
+  display: grid;
+  place-items: center;
+} */
+
+/* .about__me-image {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: all 400ms ease;
+  height: 100%;
 }
+#img-about {
+  height: 100%;
+} */
+
+/* .about__me-image:hover {
+  transform: rotate(0);
+}
+.about__content a {
+  color: inherit;
+  text-decoration: none;
+} */
+
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  text-decoration: none;
+}
+#one:hover {
+  transform: rotate(10deg);
+  transition: all 400ms ease;
+}
+#two:hover {
+  transform: rotate(10deg);
+  transition: all 400ms ease;
+}
+#three:hover {
+  transform: rotate(10deg);
+  transition: all 400ms ease;
+}
+
+.about__card {
+  background: black;
+  border: 2px solid #4db5ff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 400ms ease;
+}
+
+.about__card:hover {
+  background: #2c2c6c;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.about__card h5 {
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.about__card small {
+  font-size: 0.7rem;
+  color: #fff;
+}
+
+.about__icon {
+  color: #4db5ff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* =============== MEDIA QUARIES (MEDIUM DEVICES) =================*/
+
+/* =============== MEDIA QUARIES (SMALL DEVICES) =================*/
+@media screen and (max-width: 600px) {
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+  .review-section {
+    overflow: hidden;
+  }
+} */

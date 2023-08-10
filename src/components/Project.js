@@ -1,6 +1,11 @@
 import React from "react";
 import "./project.css";
 import IMG1 from "../img/IMG1.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+
 const data = [
   {
     id: 1,
@@ -61,7 +66,7 @@ function Project() {
   };
   return (
     <div style={serviceContainerStyle}>
-      <div>
+      <div data-aos="fade-up">
         <h1>Latest Project</h1>
       </div>
       <div style={hrStyle}>
@@ -73,9 +78,13 @@ function Project() {
           <div className="container project__container">
             {data.map(({ id, image, title, github, demo }) => {
               return (
-                <article key={id} className="project__item">
+                <article
+                  key={id}
+                  className="project__item"
+                  data-aos="zoom-in-up"
+                >
                   <div className="project__item-image">
-                    <img src={image} alt={title} width="400px" />
+                    <img id="img" src={image} alt={title} />
                   </div>
                   <h3>{title}</h3>
                   <div className="project__item-cta">

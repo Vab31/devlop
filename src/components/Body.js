@@ -1,5 +1,15 @@
 import React from "react";
 import "./body.css";
+import { FaAward } from "react-icons/fa";
+import { FiUsers } from "react-icons/fi";
+import { VscFolderLibrary } from "react-icons/vsc";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  duration: 1000,
+});
 
 const BodyComponent = () => {
   return (
@@ -25,37 +35,36 @@ const BodyComponent = () => {
           </p>
         </div>
 
-        <div className="quote">
-          <p className="quotep">HOW PEOPLE LIVES IN POLES</p>
-          <p className="quotep">A DAY AT THE SAHARA DESERT</p>
+        <div className="quote" data-aos="fade-up">
+          <p className="quotep">Lorem ipsum dolor sit amet consectetur,</p>
+          <p className="quotep">Lorem ipsum dolor sit amet.</p>
           <hr />
-          <p className="quotep">HOBIT, A REAL PLACE</p>
-          <p className="quotep">MATADORS & RED CLOTH</p>
+          <p className="quotep">Lorem ipsum dolor sit amet.</p>
+          <p className="quotep">Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
 
       <div className="review-section">
         <div className="reviewBody">
-          <h3>Our Rating</h3>
-          <div className="ratings">
-            <span className="start-icon">⭐</span>
-            <span className="overall-rating">
-              <strong>4.6</strong> <br /> overall rating
-            </span>
-            <br />
-          </div>
-          <div className="students">
-            <span className="student-icon">🎓</span>
-            <span className="student-count">
-              <strong> 3M+</strong> <br />
-              Students
-            </span>
-          </div>
-          <div className="instructors">
-            <span className="instructor-icon">👨‍🏫</span>
-            <span className="instructor-count">
-              <strong>526</strong> <br /> Instructors
-            </span>
+          <h2>Our History</h2>
+          <div className="about__cards">
+            <article className="about__card " id="one" data-aos="fade-up">
+              <FaAward className="about__icon" />
+              <h5>Experience</h5>
+              <small>6+ Months</small>
+            </article>
+            <article className="about__card" id="two" data-aos="fade-down">
+              <FiUsers className="about__icon" />
+              <h5>Clients</h5>
+              <small>7+</small>
+            </article>
+
+            <article className="about__card " id="three" data-aos="fade-up">
+              <VscFolderLibrary className="about__icon" />
+              <h5>Projects</h5>
+
+              <small>10+ Completed</small>
+            </article>
           </div>
         </div>
       </div>
