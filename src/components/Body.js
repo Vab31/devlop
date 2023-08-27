@@ -21,8 +21,6 @@ const BodyComponent = () => {
             What you <em className="sty">Think</em>
           </em>
           <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em className="sty">Want</em>
         </h1>
         <div>
           <p className="learnmore">

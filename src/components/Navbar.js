@@ -8,6 +8,8 @@ import Project from "./Project";
 import ClientFeedBack from "./ClientFeedBack";
 import BookUs from "./BookUs";
 import Footer from "./Footer";
+import { useState } from "react";
+import FounderPage from "./FounderPage";
 
 const Navbar = () => {
   return (
@@ -25,30 +27,32 @@ const Navbar = () => {
                 />{" "}
                 &nbsp;
               </span>
-              <Link to="/home">Media</Link>
+              <Link to="/">Media</Link>
             </li>
           </ul>
         </div>
         <div className="navbar-middle">
           <ul className="nav-list">
             <li className="nav-item">
-              <a href="#">Our Service</a>
+              <Link Link to="/">
+                Our Service
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#">Latest Project</a>
+              <Link to="/">Latest Project</Link>
             </li>
             <li className="nav-item">
-              <a href="#">Clients Feedback</a>
+              <Link to="/">Clients Feedback</Link>
             </li>
           </ul>
         </div>
         <div className="navbar-right">
           <ul className="nav-list">
             <li className="nav-item">
-              <a href="#">Contact</a>
+              <Link to="/">Contact</Link>
             </li>
             <li className="nav-item">
-              <a href="#">Book us Now</a>
+              <Link to="/">Book us Now</Link>
             </li>
           </ul>
         </div>
@@ -60,6 +64,7 @@ const Navbar = () => {
       <Body />
       <Service />
       <Project />
+      <FounderPage />
       <ClientFeedBack />
       <BookUs />
       <Footer />
