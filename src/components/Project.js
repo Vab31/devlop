@@ -56,8 +56,8 @@ function Project() {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    minHeight: "100vh", // This will ensure the content is centered vertically on the page
-    padding: "20px", // Adding some padding for spacing
+    minHeight: "100vh",
+    padding: "20px",
   };
 
   const hrStyle = {

@@ -2,32 +2,22 @@ import React from "react";
 import "./navBar.css";
 import Body from "./Body";
 import { Link } from "react-router-dom";
-import lean from "../img/lean.png";
+import logo1 from "../img/logo1.png";
 import Service from "./Service";
 import Project from "./Project";
 import ClientFeedBack from "./ClientFeedBack";
 import BookUs from "./BookUs";
 import Footer from "./Footer";
-import { useState } from "react";
 import FounderPage from "./FounderPage";
 
 const Navbar = () => {
   return (
-    <>
+    <div>
       <nav className="navbar">
         <div className="navbar-left">
           <ul className="nav-list">
-            <li className="nav-item">
-              <span>
-                <img
-                  style={{ marginBottom: "-5px" }}
-                  src={lean}
-                  alt=""
-                  width="25px"
-                />{" "}
-                &nbsp;
-              </span>
-              <Link to="/">Media</Link>
+            <li className="nav-item logo">
+              <img style={{}} src={logo1} alt="" width="50%" />
             </li>
           </ul>
         </div>
@@ -48,9 +38,11 @@ const Navbar = () => {
         </div>
         <div className="navbar-right">
           <ul className="nav-list">
-            <li className="nav-item">
-              <Link to="/">Contact</Link>
-            </li>
+            <div className="contactNav">
+              <li className="nav-item ">
+                <Link to="/">Contact</Link>
+              </li>
+            </div>
             <li className="nav-item">
               <Link to="/">Book us Now</Link>
             </li>
@@ -58,17 +50,26 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <div style={{ margin: "0 30px 20px 30px" }}>
+      <div>
         <hr />
       </div>
+
       <Body />
+
       <Service />
+
       <Project />
+
       <FounderPage />
-      <ClientFeedBack />
-      <BookUs />
+
+      <div>
+        <ClientFeedBack />
+      </div>
+      <div>
+        <BookUs />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

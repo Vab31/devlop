@@ -2,7 +2,6 @@ import React from "react";
 import "./bookUs.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { AiOutlineLinkedin } from "react-icons/ai";
-import { BsWhatsapp } from "react-icons/bs";
 import { AiOutlineCheck } from "react-icons/ai";
 import { ImCancelCircle } from "react-icons/im";
 import { useRef } from "react";
@@ -108,21 +107,9 @@ const BookUs = () => {
                 Send a message
               </a>
             </article>
-
-            <article className="contact__option">
-              <BsWhatsapp className="contact__option-icon" />
-              <h4>WhatsApp</h4>
-              <h5>********</h5>
-              <a
-                href="https://api.whatsapp.com/send?phone=+****"
-                target="_blank"
-                className="btn btn-primary"
-              >
-                Send a message
-              </a>
-            </article>
           </div>
           {/* END OF CONTACT OPTION */}
+
           <div data-aos="fade-left">
             <form ref={form} onSubmit={sendEmail}>
               <input

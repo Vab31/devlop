@@ -7,8 +7,6 @@
 #contact {
   width: 80%;
   margin-left: 20%;
-  /* margin-right: 5%; */
-  /* background: red; */
 }
 .contact__options {
   display: flex;
@@ -26,22 +24,22 @@
 }
 
 .contact__option:hover {
-  background: transparent;
+  background: black;
+  color: #fff;
   border-color: rgba(77, 181, 255, 0.4);
 }
 
 .contact__option-icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
 .contact__option a {
+  /* background-color: rgb(84, 109, 33); */
   margin-top: 0.7rem;
   display: inline-block;
   font-size: 0.8rem;
 }
-
-/*   TEST    */
 
 .toast {
   position: fixed;
@@ -133,7 +131,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  margin-top: 30%;
+  margin-top: 15%;
 }
 
 input,
@@ -149,7 +147,7 @@ textarea {
 }
 .btn:hover {
   background: #4db5ff;
-  color: black;
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
@@ -159,7 +157,7 @@ textarea {
 }
 
 /* =============== MEDIA QUARIES (MEDIUM DEVICES) =================*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .container.contact__container {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -167,9 +165,13 @@ textarea {
 }
 
 /* =============== MEDIA QUARIES (SMALL DEVICES) =================*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .container.contact__container {
     grid-template-columns: 1fr;
     width: 90%;
+  }
+  input,
+  textarea {
+    width: 80%;
   }
 }

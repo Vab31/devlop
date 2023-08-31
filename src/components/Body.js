@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./body.css";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -12,16 +11,24 @@ AOS.init({
 });
 
 const BodyComponent = () => {
+  const [toggleText, setToggleText] = useState("Think!");
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setToggleText((prevText) => (prevText === "Think!" ? "Want!" : "Think!"));
+    }, 1500); // Toggle every 1 second
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <div className="body-container">
       <div className="left-content">
-        <h1>
-          <em>
-            We Create <br />
-            What you <em className="sty">Think</em>
-          </em>
-          <br />
+        <h1 className="mainhead">
+          We Create <br />
+          What you <span className="sty">{toggleText}</span>
         </h1>
+
         <div>
           <p className="learnmore">
             Learn something new about the <br /> world from your favorite travel{" "}

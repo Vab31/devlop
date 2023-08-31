@@ -3,6 +3,7 @@ import "./footer.css";
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { IoLogoTwitter } from "react-icons/io";
+import logo2 from "../img/logo2.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -11,11 +12,18 @@ AOS.init();
 
 function Footer() {
   return (
-    <footer data-aos="fade-up" data-aos-duration="1000">
+    <footer>
+      {/* data-aos="fade-up" data-aos-duration="1000" */}
       <a href="/#" className="footer__logo">
-        Media
+        <img src={logo2} alt="" width="25%" />
       </a>
-
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        neque dolores minima itaque rerum nisi sapiente dolorum, eos veritatis!
+        Voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium deserunt nulla totam veritatis laboriosam perspiciatis
+        voluptate corporis, possimus blanditiis quis.
+      </p>
       <ul className="permalinks">
         <li>
           <a href="/#">Home</a>
@@ -36,7 +44,6 @@ function Footer() {
           <a href="#contact">Book Us Now</a>
         </li>
       </ul>
-
       <div className="footer__socials">
         <a href="google.com">
           <FaFacebookF />
@@ -48,7 +55,6 @@ function Footer() {
           <IoLogoTwitter />
         </a>
       </div>
-
       <div className="footer__copyright">
         <small>&copy; Media. All rights reserved.</small>
       </div>

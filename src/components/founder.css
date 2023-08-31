@@ -9,8 +9,6 @@
   padding-bottom: 20px;
   background-color: black;
   color: white;
-  /* display: flex; */
-  /* flex-direction: row; */
 }
 .gradiant {
   background-image: linear-gradient(#4db5ff, #205fff);
@@ -53,4 +51,17 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .upc {
+    width: 250px;
+  }
 }
