@@ -1,6 +1,9 @@
 import React from "react";
 import "./clientFeedBack.css";
-import IMG from "../img/user1.png";
+import IMG from "../img/lokesh.png";
+import IMG1 from "../img/Rohit.jpg";
+import IMG2 from "../img/rahul.png";
+// import IMG2 from "../img/Rohit.png";
 // Import Swiper React components
 //import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -20,28 +23,24 @@ AOS.init();
 const data = [
   {
     avatar: IMG,
-    name: "Avinash Pareek",
+    name: "Lokesh Singh",
     review:
-      "Excellent, working with web designer express was great.  Thanks to their knowledge and determination our website looks great and functions really good.  I am recommend anyone that is looking for a custom website to give them a call and speak to us, he will guide you to the right direction.",
+    "Learning coding from RcCodex was a game-changer for me. The hands-on experience and excellent guidance helped me achieve amazing results, and I'm now proud to be working as an intern in a tech company. Thank you for opening doors to a bright future!"
   },
   {
-    avatar: IMG,
-    name: "vishal",
+    avatar: IMG1,
+    name: " Rohit",
     review:
-      "Overall very pleased with Morales and Gustavo and his friendliness with us. He did everything we asked in a timely matter. I will definitely be recommending him to other companies. Thanks for such good work.",
-  },
+    "Your coding program has been a revelation for me. It equipped me with the skills and confidence to excel in the tech world. Thanks to your guidance, I secured an exciting internship opportunity, and I couldn't be more grateful for the transformative experience your course provided."    
+    },
   {
-    avatar: IMG,
-    name: "Omprakash ",
-    review:
-      "Web Designer Express did a great job of not only creating our website how we wanted it to be, but also gave us great insight on what they believed will help boost sales. Their proven experience and excellence is the reason why our company would recommend Web Designer Express to anyone who is looking to create a customized website.",
-  },
-  {
-    avatar: IMG,
-    name: "Yuvraj",
-    review:
-      "My company just wanted to say that we were very impressed with the quality of the website, the price we paid compared to other web design company was extremely low. I love the finished product you provided us. I highly recommend you as a top website designer. Thank you, PS. Gus you are the best!!!",
-  },
+    avatar: IMG2,
+    name: "Rahul",
+        review:
+    "Enrolling in your coding program was a life-changing decision. The knowledge and support I received were instrumental in my journey to becoming a proficient coder.all thanks to the strong foundation your program laid for me. It's been an incredible ride!"
+
+        },
+
 ];
 
 function ClientFeedBack() {
@@ -59,10 +58,10 @@ function ClientFeedBack() {
   };
 
   return (
-    <div className="feedBackContainer">
+    <div id="feedBackContainer">
       <div style={serviceContainerStyle}>
         <div data-aos="fade-up">
-          <h1>Client FeedBack</h1>
+          <h1>FeedBack</h1>
         </div>
         <div style={hrStyle}>
           <hr />
@@ -78,11 +77,11 @@ function ClientFeedBack() {
           {data.map(({ avatar, name, review }, index) => {
             return (
               <SwiperSlide key={index} className="feed">
-                <div className="client__avatar">
-                  <img src={avatar} alt="user" width="83px"></img>
+                <div className="client__avatar" style={{borderRadius:'100%'}}>
+                  <img src={avatar} alt="user" width="83px" height="83px"></img>
                 </div>
-                <h5 className="client__name">{name}</h5>
-                <small className="client__review">{review}</small>
+                <h5 className="client__name" style={{ fontFamily: 'Instagram Sans Bold' }}>{name}</h5>
+                <small className="client__review" style={{ fontFamily: 'Instagram Sans Regular' }}>{review}</small>
               </SwiperSlide>
             );
           })}

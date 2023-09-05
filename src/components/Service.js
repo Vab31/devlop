@@ -20,9 +20,9 @@ const Service = () => {
   };
 
   return (
-    <div style={serviceContainerStyle}>
+    <div style={serviceContainerStyle} id="learn">
       <div data-aos="fade-up">
-        <h1>Our Services</h1>
+        <h1 style={{ fontFamily: 'Instagram Sans Bold' }}>Learn with Us</h1>
       </div>
       <div style={hrStyle}>
         <hr />
@@ -37,31 +37,36 @@ const Service = () => {
               data-aos-duration="1000"
             >
               <div className="service__head">
-                <h3>Digital</h3>
+                <h3 style={{ fontFamily: 'Instagram Sans Bold' }}>Front-end Development</h3>
               </div>
 
-              <ul className="service__list">
+              <ul className="service__list" style={{ fontFamily: 'Instagram Sans Regular' }}>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Conduct user research.</p>
+                  <p>You are gonna learn(HTML5,CSS3,JS,)</p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
                   <p>
-                    Determine the information architecture of a digital product.
+                  Framworks you will be intruduced(React,Angular)
+
                   </p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Design user flows and wireframes.</p>
+                  <p>Browser Dev Tools & Web Accessibility</p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Creat prototypes.</p>
+                  <p>Web Security(HTTPS)</p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Conduct user testing.</p>
+                  <p>Web Animation</p>
+                </li>
+                <li>
+                  <BiCheck className="service__list-icon" />
+                  <p> Testing.</p>
                 </li>
               </ul>
             </article>
@@ -73,65 +78,25 @@ const Service = () => {
               data-aos-duration="1000"
             >
               <div className="service__head">
-                <h3>Web Development</h3>
+                <h3 style={{ fontFamily: 'Instagram Sans Bold' }}>MERN</h3>
               </div>
 
-              <ul className="service__list">
+              <ul className="service__list" style={{ fontFamily: 'Instagram Sans Regular' }}>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Create all types of website.</p>
+                  <p>CRUD Operaritons with No SQL Database & Mongoose</p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Ongoing Website Maintenance.</p>
+                  <p>Routers & RESTful Api</p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Web Hosting.</p>
+                  <p>Authentication $ Authorization</p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>
-                    Integrate data from various back-end services and databases.
-                  </p>
-                </li>
-                <li>
-                  <BiCheck className="service__list-icon" />
-                  <p>Search Engine Optimization (SEO).</p>
-                </li>
-                <li>
-                  <BiCheck className="service__list-icon" />
-                  <p> Social Media Management.</p>
-                </li>
-              </ul>
-            </article>
-            {/* END OF WEB DEVELOPMENT */}
-            <article
-              className="service"
-              data-aos="flip-left"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-            >
-              <div className="service__head">
-                <h3>App Developer</h3>
-              </div>
-
-              <ul className="service__list">
-                <li>
-                  <BiCheck className="service__list-icon" />
-                  <p>Create Blogs.</p>
-                </li>
-                <li>
-                  <BiCheck className="service__list-icon" />
-                  <p>Integrating Social Media.</p>
-                </li>
-                <li>
-                  <BiCheck className="service__list-icon" />
-                  <p>Automated Mail's and Replies.</p>
-                </li>
-                <li>
-                  <BiCheck className="service__list-icon" />
-                  <p>Graphic Design, Logo Design and add Design.</p>
+                  <p>UX and UI Design</p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
@@ -140,6 +105,49 @@ const Service = () => {
               </ul>
             </article>
             {/* END OF CONTENT CREATION */}
+            <article
+              className="service"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
+              <div className="service__head">
+                <h3 style={{ fontFamily: 'Instagram Sans Bold' }}>Back-end Development</h3>
+              </div>
+
+              <ul className="service__list" style={{ fontFamily: 'Instagram Sans Regular' }}>
+                <li>
+                  <BiCheck className="service__list-icon" />
+                  <p>You will learn(NodeJS,Django)
+</p>
+                </li>
+                <li>
+                  <BiCheck className="service__list-icon" />
+                  <p>Database you will learn (SQL (MySql), NoSql (Mongodb))</p>
+                </li>
+                <li>
+                  <BiCheck className="service__list-icon" />
+                  <p>API Development</p>
+                </li>
+                <li>
+                  <BiCheck className="service__list-icon" />
+                  <p>
+                  Websockets $ Web Services
+                  </p>
+                </li>
+                <li>
+                  <BiCheck className="service__list-icon" />
+                  <p>Server Security
+.</p>
+                </li>
+                <li>
+                  <BiCheck className="service__list-icon" />
+                  <p> Practical Projects.</p>
+                </li>
+              </ul>
+            </article>
+            {/* END OF WEB DEVELOPMENT */}
+            
           </div>
         </section>
       </div>

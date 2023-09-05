@@ -9,11 +9,12 @@ import ClientFeedBack from "./ClientFeedBack";
 import BookUs from "./BookUs";
 import Footer from "./Footer";
 import FounderPage from "./FounderPage";
+import Courses from "./courses";
 
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar">
+      <nav className="navbar" style={{ fontFamily: 'Instagram Sans Bold' }}>
         <div className="navbar-left">
           <ul className="nav-list">
             <li className="nav-item logo">
@@ -24,15 +25,15 @@ const Navbar = () => {
         <div className="navbar-middle">
           <ul className="nav-list">
             <li className="nav-item">
-              <Link Link to="/">
-                Our Service
-              </Link>
+              <a href="#learn">
+                Learn
+              </a>
             </li>
             <li className="nav-item">
-              <Link to="/">Latest Project</Link>
+              <a href='#resource'>Reading Material</a>
             </li>
             <li className="nav-item">
-              <Link to="/">Clients Feedback</Link>
+              <a href='#feedBackContainer'>Clients Feedback</a>
             </li>
           </ul>
         </div>
@@ -40,11 +41,11 @@ const Navbar = () => {
           <ul className="nav-list">
             <div className="contactNav">
               <li className="nav-item ">
-                <Link to="/">Contact</Link>
+                <a href='#talktous'>Contact</a>
               </li>
             </div>
             <li className="nav-item">
-              <Link to="/">Book us Now</Link>
+              <Link to="/"></Link>
             </li>
           </ul>
         </div>
@@ -57,6 +58,7 @@ const Navbar = () => {
       <Body />
 
       <Service />
+      <Courses/>
 
       <Project />
 
@@ -66,7 +68,7 @@ const Navbar = () => {
         <ClientFeedBack />
       </div>
       <div>
-        <BookUs />
+        {/* <BookUs /> */}
       </div>
       <Footer />
     </div>

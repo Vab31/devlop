@@ -18,6 +18,7 @@
 .client__avatar {
   width: 6rem;
   margin: 0 auto 1rem;
+  
 }
 
 .feed {
@@ -36,10 +37,12 @@
   display: block;
   width: 80%;
   margin: 0.8rem auto 0;
+  font-size: large;
 }
 .client__name {
   font-size: larger;
   font-weight: 600;
+
 }
 
 /* =============== MEDIA QUARIES (MEDIUM DEVICES) =================*/

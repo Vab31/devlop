@@ -3,6 +3,7 @@ import "./footer.css";
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { IoLogoTwitter } from "react-icons/io";
+import {FaYoutube} from "react-icons/fa";
 import logo2 from "../img/logo2.png";
 
 import AOS from "aos";
@@ -14,49 +15,44 @@ function Footer() {
   return (
     <footer>
       {/* data-aos="fade-up" data-aos-duration="1000" */}
-      <a href="/#" className="footer__logo">
+      <a href="/" className="footer__logo">
         <img src={logo2} alt="" width="25%" />
       </a>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
-        neque dolores minima itaque rerum nisi sapiente dolorum, eos veritatis!
-        Voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Praesentium deserunt nulla totam veritatis laboriosam perspiciatis
-        voluptate corporis, possimus blanditiis quis.
-      </p>
-      <ul className="permalinks">
+     
+      <ul className="permalinks" style={{ fontFamily: 'Instagram Sans Regular' }}>
         <li>
-          <a href="/#">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="#about">Our Service</a>
+          <a href="#learn">Learn</a>
         </li>
         <li>
-          <a href="#experience">Latest Project</a>
+          <a href="#resource">Resource</a>
         </li>
         <li>
-          <a href="#services">Clients FeedBack</a>
+          <a href="#sell">Ebook and Courses</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#feedBackContainer">FeedBack</a>
         </li>
         <li>
-          <a href="#contact">Book Us Now</a>
+          <a href="#talktous">Talk to us</a>
         </li>
+       
       </ul>
       <div className="footer__socials">
-        <a href="google.com">
+        <a href="https://www.facebook.com/profile.php?id=100090912099214&mibextid=LQQJ4d">
           <FaFacebookF />
         </a>
-        <a href="google.com">
+        <a href="https://www.instagram.com/rccodex/">
           <FiInstagram />
         </a>
-        <a href="google.com">
-          <IoLogoTwitter />
+        <a href="https://www.youtube.com/@code_with_baghi/">
+          <FaYoutube />
         </a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; Media. All rights reserved.</small>
+        <small>&copy; RcCodex. All rights reserved.</small>
       </div>
     </footer>
   );
