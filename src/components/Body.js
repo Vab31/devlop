@@ -40,10 +40,10 @@ const BodyComponent = () => {
        
 Our Expertise!
 <br/>
-Join Our Telegram for Latest Source Code!
-            <br />
-            <br />
-            <button className="learn-more-btn"><a href='https://t.me/+zQnesD2h2BxmYTNl'>Join  &#9662;</a></button>
+<p style={{ fontFamily: 'Instagram Sans Bold' ,fontSize:'30px'}} >Get Your Ebook! </p>
+           
+           
+            <button className="learn-more-btn" style={{width:'100px'}}><a href='#sell'>Get</a></button>
           </p>
         </div>
 
