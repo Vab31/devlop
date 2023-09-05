@@ -14,6 +14,23 @@ AOS.init({
 const BodyComponent = () => {
   const [toggleText, setToggleText] = useState("Think!");
   const [toggleText1, setToggleText1] = useState("Create");
+  const colors = ["red", "blue", "orange"];
+
+  // Function to change the button's background color
+  function changeBackgroundColor() {
+    const button = document.querySelector(".learn-more-btn");
+    const currentColor = button.style.backgroundColor;
+    const currentIndex = colors.indexOf(currentColor);
+    
+    // Calculate the next color index
+    const nextIndex = (currentIndex + 1) % colors.length;
+  
+    // Apply the new background color
+    button.style.backgroundColor = colors[nextIndex];
+  }
+  
+  // Set an interval to change the background color every 1500 milliseconds
+  
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -21,7 +38,10 @@ const BodyComponent = () => {
       setToggleText1((prevText) => (prevText === "Create" ? "Design" : "Create"));
     }, 1500); // Toggle every 1 second
 
-    return () => clearInterval(intervalId);
+const interval=  setInterval(changeBackgroundColor, 1000);
+
+
+    return () => clearInterval(intervalId,interval);
   }, []);
 
   return (
@@ -43,7 +63,7 @@ Our Expertise!
 <p style={{ fontFamily: 'Instagram Sans Bold' ,fontSize:'30px'}} >Get Your Ebook! </p>
            
            
-            <button className="learn-more-btn" style={{width:'100px'}}><a href='#sell'>Get</a></button>
+            <button className="learn-more-btn" style={{width:'100px',fontSize:'20px' }}><a href='#sell'>Get</a></button>
           </p>
         </div>
 

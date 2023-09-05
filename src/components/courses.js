@@ -10,7 +10,7 @@ const data = [
   {
     id: 1,
     image: 'https://codedamn.com/assets/images/learnpaths/og/frontend.png',
-    title: "FrontEnd Ebook for just ₹199",
+    title: "FrontEnd Ebook  <strike>₹499 </strike> &nbsp;  <mark>₹199</mark> ",
 
     github: "https://forms.gle/v24cwDeGw7GtxB4r5",
 
@@ -20,16 +20,19 @@ const data = [
     <br/>
      <b>24X7 TEAM SUPPORT </b>
     <br/>
+
+   <b> Revision Brief Notes</b>
+   <br/>
+   <br/>
+   `,
    
-    <br/>
-   <b> Revision Brief Notes</b>`,
    gumroad:'https://rcrao.gumroad.com/l/khjmw',
     // demo: "https://pixabay.com/",
   },
   {
     id: 2,
     image: 'https://images.prismic.io/loco-blogs/79328284-f97b-489f-924c-eb3b17e34b56_image2.png?auto=compress%2Cformat&rect=0%2C0%2C1999%2C1124&w=1920&h=1080&ar=1.91%3A1',
-    title: "Mern Ebook for just ₹299",
+    title: "Mern Ebook <strike>₹799 </strike> &nbsp;  <mark>₹299</mark>",
     github: "https://forms.gle/v24cwDeGw7GtxB4r5",
 
     // demo: "https://pixabay.com/",
@@ -39,16 +42,18 @@ const data = [
     <br/>
    <b> 24X7 TEAM SUPPORT</b>
     <br/>
-    
-    <br/>
-   <b> Revision Brief Notes </b>`,
+   
+   <b> Revision Brief Notes </b>
+   <br/>
+   <br/>
+   `,
    gumroad:'https://rcrao.gumroad.com/l/zukzl'
   },
 
   {
     id: 3,
     image: 'https://simpleprogrammer.com/wp-content/uploads/2016/12/What-Is-Back-End-Development.png',
-    title: "BackEnd Ebook for just ₹199",
+    title: "BackEnd Ebook <strike>₹499 </strike> &nbsp; <mark> ₹199 </mark>",
     github: "https://forms.gle/v24cwDeGw7GtxB4r5",
     // demo: "https://pixabay.com/",
     details:`<b>70+ BASIC PROJECTS</b> WITH SOURCE CODE
@@ -59,8 +64,11 @@ const data = [
     <b>24X7 TEAM SUPPORT</b>
     <br/>
    
+    <b>Revision Brief Notes</b>
     <br/>
-    <b>Revision Brief Notes</b>`,
+   <br/>
+
+    `,
     gumroad:'https://rcrao.gumroad.com/l/zmtoe',
 
 
@@ -105,8 +113,7 @@ function Courses() {
                   <div className="project__item-image">
                     <img id="img" src={image} alt={title} />
                   </div>
-                  <h3 style={{ fontFamily: 'Instagram Sans Bold' }}>{title}</h3>
-
+                  <h3 style={{ fontFamily: 'Instagram Sans Bold', color:'red',fontWeight:"bolder" }} dangerouslySetInnerHTML={{ __html: title }}/>
                   <div style={{ fontFamily: 'Instagram Sans Regular ',margin:'5px',textAlign:"center" }} dangerouslySetInnerHTML={{ __html: details }} />
 
                   <div className="project__item-cta btnbuy" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -118,7 +125,7 @@ function Courses() {
       rel="noreferrer"
       style={{ fontFamily: 'Instagram Sans Regular' }}
     >
-      Buy through Upi
+      Buy through UPI
     </a>
   </div>
   <div>
