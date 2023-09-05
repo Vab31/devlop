@@ -23,7 +23,7 @@ AOS.init();
 const data = [
   {
     avatar: IMG,
-    name: "Lokesh Singh",
+    name: "Aadarsh Gupta",
     review:
     "Learning coding from RcCodex was a game-changer for me. The hands-on experience and excellent guidance helped me achieve amazing results, and I'm now proud to be working as an intern in a tech company. Thank you for opening doors to a bright future!"
   },

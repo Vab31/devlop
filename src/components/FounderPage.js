@@ -36,10 +36,10 @@ function FounderPage() {
             <div className="profile-title" style={{ fontFamily: 'Instagram Sans Bold' }}>RC RAO</div>
             <div className="profile-description" style={{ fontFamily: 'Instagram Sans Regular' }}>
             RC, CEO and founder of RCCODEX.
-            IF you have any doubt and What to talk click on below button 👇
+            IF you have any doubt and want to talk click on the following button 👇
             </div>
             <div className="profile-button">
-              <a href=" " style={{ fontFamily: 'Instagram Sans Regular' }}>Contact me</a>
+              <a href="https://calendly.com/rccodex/30min" style={{ fontFamily: 'Instagram Sans Regular' }}>Contact me</a>
             </div>
             <a href="https://www.instagram.com/rccodex/" style={{fontSize:'24px',marginLeft:'24px'}}>
           <FiInstagram />
