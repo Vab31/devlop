@@ -39,9 +39,10 @@ const BodyComponent = () => {
           Your Success,
        
 Our Expertise!
+Join Our Telegram for Latest Source Code!
             <br />
             <br />
-            <button className="learn-more-btn">Know More &#9662;</button>
+            <button className="learn-more-btn"><a href='https://t.me/+zQnesD2h2BxmYTNl'>Join  &#9662;</a></button>
           </p>
         </div>
 
