@@ -22,7 +22,8 @@ const data = [
     <br/>
    
     <br/>
-   <b> Revision Brief Notes</b>`
+   <b> Revision Brief Notes</b>`,
+   gumroad:'https://rcrao.gumroad.com/l/khjmw',
     // demo: "https://pixabay.com/",
   },
   {
@@ -30,6 +31,7 @@ const data = [
     image: 'https://images.prismic.io/loco-blogs/79328284-f97b-489f-924c-eb3b17e34b56_image2.png?auto=compress%2Cformat&rect=0%2C0%2C1999%2C1124&w=1920&h=1080&ar=1.91%3A1',
     title: "Mern Ebook for just ₹299",
     github: "https://forms.gle/v24cwDeGw7GtxB4r5",
+
     // demo: "https://pixabay.com/",
     details:`<b>70+ BASIC PROJECTS</b> WITH SOURCE CODE:
     <br/>
@@ -39,7 +41,8 @@ const data = [
     <br/>
     
     <br/>
-   <b> Revision Brief Notes </b>`
+   <b> Revision Brief Notes </b>`,
+   gumroad:'https://rcrao.gumroad.com/l/zukzl'
   },
 
   {
@@ -57,7 +60,11 @@ const data = [
     <br/>
    
     <br/>
-    <b>Revision Brief Notes</b>`
+    <b>Revision Brief Notes</b>`,
+    gumroad:'https://rcrao.gumroad.com/l/zmtoe',
+
+
+
   },
 
 ];
@@ -88,7 +95,7 @@ function Courses() {
       <div>
         <section id="project">
           <div className="container project__container">
-            {data.map(({ id, image, title, github, details }) => {
+            {data.map(({ id, image, title, github, details,gumroad }) => {
               return (
                 <article
                   key={id}
@@ -102,18 +109,31 @@ function Courses() {
 
                   <div style={{ fontFamily: 'Instagram Sans Regular ',margin:'5px',textAlign:"center" }} dangerouslySetInnerHTML={{ __html: details }} />
 
-                  <div className="project__item-cta">
-                    <a
-                      href={github}
-                      className="btn btn-primary"
-                      target="_blank"
-                      rel="noreferrer"
-                      style={{ fontFamily: 'Instagram Sans Regular' }}
-                    >
-                      Buy
-                    </a>
-                  
-                  </div>
+                  <div className="project__item-cta btnbuy" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <div>
+    <a
+      href={github}
+      className="btn btn-primary"
+      target="_blank"
+      rel="noreferrer"
+      style={{ fontFamily: 'Instagram Sans Regular' }}
+    >
+      Buy through Upi
+    </a>
+  </div>
+  <div>
+    <a
+      href={gumroad}
+      className="btn btn-primary"
+      target="_blank"
+      rel="noreferrer"
+      style={{ fontFamily: 'Instagram Sans Regular' }}
+    >
+      Buy (International Students)
+    </a>
+  </div>
+</div>
+
                 </article>
               );
             })}

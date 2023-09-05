@@ -61,7 +61,7 @@ function ClientFeedBack() {
     <div id="feedBackContainer">
       <div style={serviceContainerStyle}>
         <div data-aos="fade-up">
-          <h1>FeedBack</h1>
+          <h1 style={{ fontFamily: 'Instagram Sans Bold' }}>FeedBack</h1>
         </div>
         <div style={hrStyle}>
           <hr />

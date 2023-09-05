@@ -73,6 +73,6 @@ body {
 
 @media screen and (max-width: 300px) {
   .nav-item {
-    font-size: 5px;
+    font-size: 10px;
   }
 }

@@ -36,8 +36,8 @@
   }
   
   .project__item-cta {
-    display: flex;
-    justify-content: center;
+    
+    /* justify-content: center; */
     gap: 1rem;
     margin-bottom: 1rem;
   }
@@ -52,6 +52,10 @@
     cursor: pointer;
     border: 1px solid #1f1f38;
     transition: all 400ms ease;
+  }
+  .btnbuy{
+    display: flex;
+    flex-direction:column;
   }
   
   .btn:hover {
@@ -84,6 +88,9 @@
     .project__container {
       grid-template-columns: 1fr;
       gap: 1rem;
+    }
+    .btn{
+      font-size: 20px;
     }
   }
   
