@@ -47,7 +47,7 @@ const data = [
     id: 6,
     image: IMG1,
     title: "Git/Github cheat sheet",
-    github: "",
+    github: "https://drive.google.com/file/d/11ozSS2pC7rHmYvgskPTBBSEWeqqPfSeP/view?usp=drive_link",
     // demo: "https://pixabay.com/",
   },
 ];
