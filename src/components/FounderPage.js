@@ -1,6 +1,6 @@
 import React from "react";
 import "./founder.css";
-import user1 from "../img/user1.png";
+import vaibhav from "../img/Vaibhav.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FiInstagram } from "react-icons/fi";
@@ -51,7 +51,7 @@ function FounderPage() {
         <div className="upc">
           <div className="gradiant"></div>
           <div className="profile-down" >
-            <img src="https://media.licdn.com/dms/image/D4D03AQHoHnUNYqZCFg/profile-displayphoto-shrink_200_200/0/1693772661975?e=1699488000&v=beta&t=8ikswd4B4c-rsdo46ueNJHFfyKM_1Spd7tcVRDPCKsw" alt="" />
+            <img src={vaibhav} alt="" />
             <div className="profile-title " style={{ fontFamily: 'Instagram Sans Bold' }}>Vaibhav Singh
          
             </div>
