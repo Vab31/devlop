@@ -57,6 +57,13 @@ const data = [
     github: "https://drive.google.com/file/d/1i8g9shkkX5koW9xlJAGMAT2Drm3i2_kv/view?usp=drive_link",
     // demo: "https://pixabay.com/",
   },
+  {
+    id: 8,
+    image: IMG1,
+    title: "CSS cheat sheet",
+    github: "https://drive.google.com/file/d/1ZUaHwB7A5kqjIClOEcsG843uRFv6itYL/view?usp=drive_link",
+    // demo: "https://pixabay.com/",
+  },
 ];
 
 function Project() {
