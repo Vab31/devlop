@@ -26,7 +26,7 @@ const data = [
     id: 3,
     image: IMG1,
     title: "Sql Notes",
-    github: "",
+    github: "https://drive.google.com/file/d/1e8LVkzRbexmDwT69b_cG5CX7chYGaJ5Y/view?usp=drive_link",
     // demo: "https://pixabay.com/",
   },
   {
