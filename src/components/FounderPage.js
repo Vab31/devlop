@@ -62,7 +62,7 @@ function FounderPage() {
             </div>
             <div className="wrap">
             <div className="profile-button">
-              <a href="https://calendly.com/singhvaibhav654/talk-to-me
+              <a href="https://topmate.io/vaibhav_singh31
  " style={{ fontFamily: 'Instagram Sans Regular' }}>Contact me</a>
   </div>
             <a href="https://www.instagram.com/vab_3110/" style={{fontSize:'24px',marginLeft:'24px'}}>
