@@ -3,13 +3,7 @@ import "./navBar.css";
 import Body from "./Body";
 import { Link } from "react-router-dom";
 import logo1 from "../img/logo1.png";
-import Service from "./Service";
-import Project from "./Project";
-import ClientFeedBack from "./ClientFeedBack";
-import BookUs from "./BookUs";
-import Footer from "./Footer";
-import FounderPage from "./FounderPage";
-import Courses from "./courses";
+
 
 const Navbar = () => {
   return (
@@ -30,10 +24,10 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href='#resource'>Reading Material</a>
+              <a href='#resource'>Project</a>
             </li>
             <li className="nav-item">
-              <a href='#feedBackContainer'>Clients Feedback</a>
+              <a href='#sell'>Courses</a>
             </li>
           </ul>
         </div>
@@ -55,22 +49,7 @@ const Navbar = () => {
         <hr />
       </div>
 
-      <Body />
-
-      <Service />
-      <Courses/>
-
-      <Project />
-
-      <FounderPage />
-
-      <div>
-        <ClientFeedBack />
-      </div>
-      <div>
-        {/* <BookUs /> */}
-      </div>
-      <Footer />
+     
     </div>
   );
 };

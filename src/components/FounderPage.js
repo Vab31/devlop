@@ -17,12 +17,12 @@ function FounderPage() {
 
   const hrStyle = {
     width: "80%",
-    margin: "20px 0px",
+    // margin: "20px 0px",
   };
   return (
     <div style={serviceContainerStyle} className="contact" id="talktous">
-      <div data-aos="fade-up">
-        <h1 style={{ fontFamily: 'Instagram Sans Bold' }}>Talk To Us</h1>
+      <div data-aos="fade-up" className="m-5">
+        <h1 style={{ fontFamily: 'Instagram Sans Bold' }} className="text-3xl md:text-5xl">Talk To Us</h1>
       </div>
       <div style={hrStyle}>
         <hr />
@@ -32,10 +32,10 @@ function FounderPage() {
         <div className="upc">
           <div className="gradiant"></div>
           <div className="profile-down">
-            <img src='https://media.licdn.com/dms/image/D5603AQGe_gJYj0oWbw/profile-displayphoto-shrink_200_200/0/1690650995853?e=1699488000&v=beta&t=L2oYlzEAXJKxEz5p-xcptRGMIFWcAgYnf7Dm3saTfeM' alt="" />
+            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQofWpdmZ0rGkzQe34EmWKyFIfePqD-YMwOilCF3UdjV5CV8kz-Trv4uzuOfsE_b4DDgDc&usqp=CAU' alt="" />
             <div className="profile-title" style={{ fontFamily: 'Instagram Sans Bold' }}>RC RAO</div>
             <div className="profile-description" style={{ fontFamily: 'Instagram Sans Regular' }}>
-            RC, CEO and founder of RCCODEX.
+            RC, CEO and Co-founder of RCCODEX.
             IF you have any doubt and want to talk click on the following button 👇
             </div>
             <div className="profile-button">

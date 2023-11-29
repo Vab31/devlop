@@ -1,0 +1,80 @@
+.services__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    width: 95%;
+  }
+  
+  #services {
+    margin-left: 7%;
+  }
+  .service {
+    /* background: #2c2c6c; */
+    background: black;
+    border-radius: 0 0 2rem 2rem;
+    border: 1px solid #4db5ff;
+    height: fit-content;
+    transition: all 400ms ease;
+    color: white;
+    font-size: large;
+  }
+  
+  .service:hover {
+    /* background: black; */
+    background: #2c2c6c;
+    border-color: rgba(77, 181, 255, 0.4);
+    cursor: default;
+  }
+  
+  .service__head {
+    background: #4db5ff;
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .service__head h3 {
+    color: #1f1f38;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .service__list {
+    padding: 2rem;
+  }
+  
+  .service__list li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .service__list-icon {
+    color: #4db5ff;
+    margin-top: 13px;
+  }
+  
+  .service__list p {
+    font-size: 0.9rem;
+  }
+  
+  /* =============== MEDIA QUARIES (MEDIUM DEVICES) =================*/
+  @media screen and (max-width: 1024px) {
+    .services__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+  
+    .service {
+      height: auto;
+    }
+  }
+  
+  /* =============== MEDIA QUARIES (SMALL DEVICES) =================*/
+  @media screen and (max-width: 600px) {
+    .services__container {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+  

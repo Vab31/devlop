@@ -1,6 +1,8 @@
 import React from "react";
 import "./project.css";
 import IMG1 from "../img/IMG1.jpg";
+import img2 from "../img/pp3.jpg"
+import img3 from "../img/Project-Management-Post.jpg"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -9,7 +11,7 @@ AOS.init();
 const data = [
   {
     id: 1,
-    image: 'https://cdn.wccftech.com/wp-content/uploads/2016/10/Front-End-Development-Bundle.jpg',
+    image: IMG1,
     title: "Frontend project",
     github: "https://github.com/Vab31/qrcode.git",
     
@@ -17,53 +19,62 @@ const data = [
   },
   {
     id: 2,
-    image: 'https://cdn.wccftech.com/wp-content/uploads/2016/10/Front-End-Development-Bundle.jpg',
+    image: img3,
     title: "Frontend Project 2",
     github: "https://github.com/Vab31/finhunt_frontend",
     // demo: "https://pixabay.com/",
   },
   {
     id: 3,
-    image: IMG1,
-    title: "Sql Notes",
-    github: "https://drive.google.com/file/d/1e8LVkzRbexmDwT69b_cG5CX7chYGaJ5Y/view?usp=drive_link",
+    image: img2,
+    title: "Project 3",
+    github: "https://github.com/Vab31/rcrepothree",
     // demo: "https://pixabay.com/",
   },
-  {
-    id: 4,
-    image: IMG1,
-    title: "Oops Notes",
-    github: "",
-    // demo: "https://pixabay.com/",
-  },
-  {
-    id: 5,
-    image: IMG1,
-    title: "Computer Networking  Notes",
-    github: "",
-    // demo: "https://pixabay.com/",
-  },
-  {
-    id: 6,
-    image: IMG1,
-    title: "Git/Github cheat sheet",
-    github: "https://drive.google.com/file/d/11ozSS2pC7rHmYvgskPTBBSEWeqqPfSeP/view?usp=drive_link",
-    // demo: "https://pixabay.com/",
-  },
-  {
-    id: 7,
-    image: IMG1,
-    title: "HTML cheat sheet",
-    github: "https://drive.google.com/file/d/1i8g9shkkX5koW9xlJAGMAT2Drm3i2_kv/view?usp=drive_link",
-    // demo: "https://pixabay.com/",
-  },
-  {
-    id: 8,
-    image: IMG1,
-    title: "CSS cheat sheet",
-    github: "https://drive.google.com/file/d/1ZUaHwB7A5kqjIClOEcsG843uRFv6itYL/view?usp=drive_link",
-    // demo: "https://pixabay.com/",
-  },
+  // {
+  //   id: 3,
+  //   image: IMG1,
+  //   title: "Sql Notes",
+  //   github: "https://drive.google.com/file/d/1e8LVkzRbexmDwT69b_cG5CX7chYGaJ5Y/view?usp=drive_link",
+  //   // demo: "https://pixabay.com/",
+  // },
+  // {
+  //   id: 4,
+  //   image: IMG1,
+  //   title: "Oops Notes",
+  //   github: "",
+  //   // demo: "https://pixabay.com/",
+  // },
+  // {
+  //   id: 5,
+  //   image: IMG1,
+  //   title: "Computer Networking  Notes",
+  //   github: "",
+  //   // demo: "https://pixabay.com/",
+  // },
+  // {
+  //   id: 6,
+  //   image: IMG1,
+  //   title: "Git/Github cheat sheet",
+  //   github: "https://drive.google.com/file/d/11ozSS2pC7rHmYvgskPTBBSEWeqqPfSeP/view?usp=drive_link",
+  //   // demo: "https://pixabay.com/",
+  // },
+  // {
+  //   id: 7,
+  //   image: IMG1,
+  //   title: "HTML cheat sheet",
+  //   github: "https://drive.google.com/file/d/1i8g9shkkX5koW9xlJAGMAT2Drm3i2_kv/view?usp=drive_link",
+  //   // demo: "https://pixabay.com/",
+  // },
+  // {
+  //   id: 8,
+  //   image: IMG1,
+  //   title: "CSS cheat sheet",
+  //   github: "https://drive.google.com/file/d/1ZUaHwB7A5kqjIClOEcsG843uRFv6itYL/view?usp=drive_link",
+  //   // demo: "https://pixabay.com/",
+  // },
+
+
 ];
 
 function Project() {
@@ -71,8 +82,9 @@ function Project() {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    minHeight: "100vh",
-    padding: "20px",
+    minHeight: "60px",
+    padding: "10px",
+    
   };
 
   const hrStyle = {
@@ -84,7 +96,7 @@ function Project() {
   return (
     <div style={serviceContainerStyle} id="resource">
       <div data-aos="fade-up">
-        <h1 style={{ fontFamily: 'Instagram Sans Bold', fontSize:"50px" }}  >Resourses To help You Out :)</h1>
+        <h1 style={{ fontFamily: 'Instagram Sans Bold'}} className="md:text-5xl text-2xl md:m-5"  >Resourses To help You Out :)</h1>
       </div>
       <div style={hrStyle}>
         <hr />
@@ -97,13 +109,14 @@ function Project() {
               return (
                 <article
                   key={id}
-                  className="project__item"
+                  className="project__item h-96"
                   data-aos="zoom-in-up"
+
                 >
-                  <div className="project__item-image">
+                  <div className="project__item-image h-60">
                     <img id="img" src={image} alt={title} />
                   </div>
-                  <h3 style={{ fontFamily: 'Instagram Sans Bold' }}>{title}</h3>
+                  <h3 style={{ fontFamily: 'Instagram Sans Bold' }} className="text-red-600 text-2xl">{title}</h3>
                   <div className="project__item-cta">
                   { github?
                     <a

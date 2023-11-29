@@ -45,7 +45,7 @@ const interval=  setInterval(changeBackgroundColor, 1000);
   }, []);
 
   return (
-    <div className="body-container">
+    <div className="body-container  bg-slate-300">
       <div className="left-content">
         <h1 className="mainhead" style={{ fontFamily: 'Instagram Sans Bold' }}>
           We <span className="sty">{toggleText1}</span> <br />
@@ -54,13 +54,13 @@ const interval=  setInterval(changeBackgroundColor, 1000);
 
         <div>
           <p className="learnmore" style={{ fontFamily: 'Instagram Sans Medium' }}>
-          Grow together with 1M community <br /> with Exceptional Web Development Solutions – 
+          Grow together with 1M community <br /> with Exceptional CS Solutions and Training – 
           <br/>
           Your Success,
        
 Our Expertise!
 <br/>
-<p style={{ fontFamily: 'Instagram Sans Bold' ,fontSize:'30px'}} >Get Your Ebook! </p>
+<p style={{ fontFamily: 'Instagram Sans Bold' ,fontSize:'30px'}} className="text-black">Get Your Courses! </p>
            
            
             <button className="learn-more-btn" style={{width:'100px',fontSize:'20px' }}><a href='#sell'>Get</a></button>
@@ -78,22 +78,22 @@ Our Expertise!
 
       <div className="review-section">
         <div className="reviewBody" style={{ fontFamily: 'Instagram Sans Regular' }}>
-          <h2>Our History</h2>
-          <div className="about__cards">
-            <article className="about__card " id="one" data-aos="fade-up">
-              <FaAward className="about__icon" />
-              <h5>Community</h5>
-              <small>100K Members</small>
+          <h2 className="md:text-5xl p-7">Our History</h2>
+          <div className="about__cards md:h-72">
+            <article className="about__card md:h-64" id="one" data-aos="fade-up">
+              <FaAward className="ml-auto mr-auto about__icon" />
+              <h5 className="p-5">Community</h5>
+              <small>100K+ Members</small>
             </article>
-            <article className="about__card" id="two" data-aos="fade-down">
-              <FiUsers className="about__icon" />
-              <h5>Trained Students</h5>
-              <small>70+</small>
+            <article className="about__card md:h-64" id="one" data-aos="fade-up">
+              <FaAward className="ml-auto mr-auto about__icon" />
+              <h5 className="p-5">Trained Student</h5>
+              <small>270+ Members</small>
             </article>
 
-            <article className="about__card " id="three" data-aos="fade-up">
-              <VscFolderLibrary className="about__icon" />
-              <h5>Projects</h5>
+            <article className="about__card md:h-64" id="three" data-aos="fade-up">
+              <VscFolderLibrary className="ml-auto mr-auto about__icon" />
+              <h5 className="p-5">Projects</h5>
 
               <small>100+ Completed</small>
             </article>

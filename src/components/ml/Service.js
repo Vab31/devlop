@@ -37,37 +37,38 @@ const Service = () => {
               data-aos-duration="1000"
             >
               <div className="service__head">
-                <h3 style={{ fontFamily: 'Instagram Sans Bold' }}>Front-end Development</h3>
+                <h3 style={{ fontFamily: 'Instagram Sans Bold' }}>Data Science</h3>
               </div>
 
               <ul className="service__list " style={{ fontFamily: 'Instagram Sans Regular' }}>
+              <li className="pt-3 pb-3 text-xl">
+                  <BiCheck className="service__list-icon" />
+                  <p>What is data science? Why is it important?</p>
+                </li>
                 <li className="pt-3 pb-3 text-xl">
                   <BiCheck className="service__list-icon" />
-                  <p>You are gonna learn(HTML5,CSS3,JS,)</p>
+                  <p>Environmental Setup</p>
                 </li>
                 <li  className="pt-3 pb-3">
                   <BiCheck className="service__list-icon" />
                   <p>
-                  Framworks you will be intruduced(React,Angular)
+                  Python Basics
 
                   </p>
                 </li>
               <li className="pt-3 pb-3 text-xl">
                   <BiCheck className="service__list-icon" />
-                  <p>Browser Dev Tools & Web Accessibility</p>
+                  <p>Loops and Functions</p>
                 </li>
                 <li className="pt-3 pb-3 text-xl">
                   <BiCheck className="service__list-icon" />
-                  <p>Css and Hover effects.</p>
+                  <p>Numerical computing with Numpy</p>
                 </li>
                 <li className="pt-3 pb-3 text-xl">
                   <BiCheck className="service__list-icon" />
-                  <p>Web Animation</p>
+                  <p>Data manipulation using Pandas</p>
                 </li>
-                <li className="pt-3 pb-3 text-xl">
-                  <BiCheck className="service__list-icon" />
-                  <p>UX and UI Design</p>
-                </li>
+                
               </ul>
             </article>
             {/* END OF UI/UX */}
@@ -78,30 +79,30 @@ const Service = () => {
               data-aos-duration="1000"
             >
               <div className="service__head">
-                <h3 style={{ fontFamily: 'Instagram Sans Bold' }}>MERN</h3>
+                <h3 style={{ fontFamily: 'Instagram Sans Bold' }}>Machine Learning</h3>
               </div>
 
               <ul className="service__list" style={{ fontFamily: 'Instagram Sans Regular' }}>
               <li className="pt-3 pb-3 text-xl">
                   <BiCheck className="service__list-icon" />
-                  <p>CRUD Operaritons with No SQL Database & Mongoose</p>
+                  <p>Forecasting and prediction using regression</p>
                 </li>
                 <li className="pt-3 pb-3 text-xl">
                   <BiCheck className="service__list-icon" />
-                  <p>Routers & RESTful Api</p>
+                  <p>Linear and Logistic Regression</p>
                 </li>
                 <li className="pt-3 pb-3 text-xl">
                   <BiCheck className="service__list-icon" />
-                  <p>Authentication $ Authorization</p>
+                  <p>Implementation of Algorithms</p>
                 </li>
                 <li className="pt-3 pb-3 text-xl">
                   <BiCheck className="service__list-icon" />
                   
-                  <p> Testing.</p>
+                  <p> Analysis and evaluation</p>
                 </li>
                 <li className="pt-3 pb-3 text-xl">
                   <BiCheck className="service__list-icon" />
-                  <p>Web Security(HTTPS)</p>
+                  <p>Deploying/  Serving the model</p>
                   
                 </li>
               </ul>
@@ -114,37 +115,37 @@ const Service = () => {
               data-aos-duration="1000"
             >
               <div className="service__head">
-                <h3 style={{ fontFamily: 'Instagram Sans Bold' }}>Back-end Development</h3>
+                <h3 style={{ fontFamily: 'Instagram Sans Bold' }}>Data Science and Analytics</h3>
               </div>
 
               <ul className="service__list" style={{ fontFamily: 'Instagram Sans Regular' }}>
                 <li className="pt-3 pb-3 text-xl">
                   <BiCheck className="service__list-icon" />
-                  <p>You will learn(NodeJS,Django)
+                  <p>Data and its various classifications: Continuous & Discrete, Structured vs Unstructured
 </p>
                 </li>
                 <li className="pt-3 pb-3 text-xl">
                   <BiCheck className="service__list-icon" />
-                  <p>Database Interaction</p>
+                  <p>Mathematics   for Data Science (Probability, Statistics,  Linear Algebra, Gradient Descent, calculus)</p>
                 </li>
                 <li className="pt-3 pb-3 text-xl">
                   <BiCheck className="service__list-icon" />
-                  <p>API Development</p>
+                  <p>Cleaning Data</p>
                 </li>
                 <li className="pt-3 pb-3 text-xl">
                   <BiCheck className="service__list-icon" />
                   <p>
-                  Websockets $ Web Services
+                  Data Manipulation
                   </p>
                 </li>
                 <li className="pt-3 pb-3 text-xl">
                   <BiCheck className="service__list-icon" />
-                  <p>Server Security
+                  <p>Summarizing Data
 .</p>
                 </li>
                 <li className="pt-3 pb-3 text-xl">
                   <BiCheck className="service__list-icon" />
-                  <p>CRUD Operaritons with No SQL Database & Mongoose</p>
+                  <p>Jupyter Notebook</p>
                 </li>
               </ul>
             </article>

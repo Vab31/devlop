@@ -1,9 +1,7 @@
 import React from "react";
 import "./project.css";
 import IMG1 from "../img/IMG1.jpg";
-import ml from "../img/ml.png";
-import mern from "../img/mern.png";
-import softskill from "../img/soft-skills-feature.png";
+import ml from "../img/IMG1.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -12,42 +10,67 @@ AOS.init();
 const data = [
   {
     id: 1,
-    image: mern,
-    title: `<h3 style={{ fontFamily: 'Instagram Sans Bold' }} className="text-red-600 text-4xl">Web Devlopment</h3>`
-    ,
+    image: 'https://codedamn.com/assets/images/learnpaths/og/frontend.png',
+    title: "FrontEnd Ebook  <strike>₹499 </strike> &nbsp;  <mark>₹199</mark> ",
 
     github: "https://forms.gle/v24cwDeGw7GtxB4r5",
 
-    details:`We’ll teach you to use and implement the fundamental building blocks of the web to ensure you are skilled enough to develop your own website
+    details:`70+ BASIC PROJECTS WITH SOURCE CODE:
+    <br/>
+    <b>50+ BIG PROJECTS </b>WITH SOURCE CODE:
+    <br/>
+     <b>24X7 TEAM SUPPORT </b>
+    <br/>
 
+   <b> Revision Brief Notes</b>
+   <br/>
+   <br/>
    `,
    
-   gumroad:'/webdev',
+   gumroad:'https://rcrao.gumroad.com/l/khjmw',
     // demo: "https://pixabay.com/",
   },
   {
     id: 2,
-    image: ml,
-    title: "Machine Learning",
+    image: 'https://images.prismic.io/loco-blogs/79328284-f97b-489f-924c-eb3b17e34b56_image2.png?auto=compress%2Cformat&rect=0%2C0%2C1999%2C1124&w=1920&h=1080&ar=1.91%3A1',
+    title: "Mern Ebook <strike>₹799 </strike> &nbsp;  <mark>₹299</mark>",
     github: "https://forms.gle/v24cwDeGw7GtxB4r5",
 
     // demo: "https://pixabay.com/",
-    details:`In this program you’ll be taught to use all the tools required and identify trends, patterns and gain insights from raw data as required in the industry, 
+    details:`<b>70+ BASIC PROJECTS</b> WITH SOURCE CODE:
+    <br/>
+    <b>20+ BIG PROJECTS</b> WITH SOURCE CODE
+    <br/>
+   <b> 24X7 TEAM SUPPORT</b>
+    <br/>
+   
+   <b> Revision Brief Notes </b>
+   <br/>
+   <br/>
    `,
-   gumroad:'/ml'
+   gumroad:'https://rcrao.gumroad.com/l/zukzl'
   },
 
   {
     id: 3,
-    image:softskill,
-    title: "SoftSkill",
+    image: 'https://simpleprogrammer.com/wp-content/uploads/2016/12/What-Is-Back-End-Development.png',
+    title: "BackEnd Ebook <strike>₹499 </strike> &nbsp; <mark> ₹199 </mark>",
     github: "https://forms.gle/v24cwDeGw7GtxB4r5",
     // demo: "https://pixabay.com/",
-    details:`
-    This program focuses on honing essential soft skills, including effective communication. By the end, you'll possess personal and professional success.
+    details:`<b>70+ BASIC PROJECTS</b> WITH SOURCE CODE
+    <br/>
+    <b>50+ BIG PROJECTS</b> WITH SOURCE CODE:
+    
+    <br/>
+    <b>24X7 TEAM SUPPORT</b>
+    <br/>
+   
+    <b>Revision Brief Notes</b>
+    <br/>
+   <br/>
 
     `,
-    gumroad:'/',
+    gumroad:'https://rcrao.gumroad.com/l/zmtoe',
 
 
 
@@ -61,19 +84,18 @@ function Courses() {
     flexDirection: "column",
     alignItems: "center",
     minHeight: "100vh",
-    padding: "5px",
-    marginTop:"15px"
+    padding: "20px",
   };
 
   const hrStyle = {
     width: "100%",
-    marginTop:"-5px",
-    marginBottom:"10px"
+    marginTop:"-20px",
+    marginBottom:"20px"
   };
   return (
     <div style={serviceContainerStyle} id="sell">
       <div data-aos="fade-up">
-        <h1 style={{ fontFamily: 'Instagram Sans Bold'}} className="md:text-5xl text-2xl md:m-5 " > Our Most Popular Courses :)</h1>
+        <h1 style={{ fontFamily: 'Instagram Sans Bold', fontSize:"50px" }}  > Courses :)</h1>
       </div>
       <div style={hrStyle}>
         <hr />
@@ -90,10 +112,10 @@ function Courses() {
                   data-aos="zoom-in-up"
                 >
                   <div className="project__item-image">
-                    <img id="img" src={image}  />
+                    <img id="img" src={image} alt={title} />
                   </div>
-                  <h3 className="text-2xl" style={{ fontFamily: 'Instagram Sans Bold', color:'red',fontWeight:"bolder" }} dangerouslySetInnerHTML={{ __html: title }}/>
-                  {/* <div style={{ fontFamily: 'Instagram Sans Regular ',margin:'5px',textAlign:"center" }} dangerouslySetInnerHTML={{ __html: details }} /> */}
+                  <h3 style={{ fontFamily: 'Instagram Sans Bold', color:'red',fontWeight:"bolder" }} dangerouslySetInnerHTML={{ __html: title }}/>
+                  <div style={{ fontFamily: 'Instagram Sans Regular ',margin:'5px',textAlign:"center" }} dangerouslySetInnerHTML={{ __html: details }} />
 
                   <div className="project__item-cta btnbuy" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   {/* <div>
@@ -115,11 +137,11 @@ function Courses() {
       rel="noreferrer"
       style={{ fontFamily: 'Instagram Sans Regular' }}
     >
-     Know More
+      Buy (International Students)
     </a>
   </div>
 </div>
-<p className="text-center text-lg">{details}</p>
+
                 </article>
               );
             })}

@@ -10,6 +10,7 @@
   background: #4db5ff;
   padding: 0.3rem;
   border-radius: 2rem;
+  
   border: 1px solid transparent;
   transition: all 400ms ease;
 }
@@ -77,6 +78,16 @@
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
   }
+ 
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Your styles for large screens go here */
+  #resource{
+    margin-top: -100px;
+  }
+
+  /* Add more styles as needed */
 }
 
 /* =============== MEDIA QUARIES (SMALL DEVICES) =================*/
