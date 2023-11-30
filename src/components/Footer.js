@@ -52,7 +52,10 @@ function Footer() {
         </a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; RcCodex. All rights reserved.</small>
+        <small>&copy; RcCodex. All rights reserved.
+        <br/>
+        vab311002@gmail.com
+        </small>
       </div>
     </footer>
   );
